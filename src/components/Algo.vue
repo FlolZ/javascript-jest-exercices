@@ -36,7 +36,7 @@
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from "@vue/composition-api";
 import { EXERCICES } from "./EXERCICES";
-import { exercice1 } from './use-algo';
+import { exercice1 } from "./use-algo";
 export default defineComponent({
   props: {},
   setup() {
@@ -44,8 +44,6 @@ export default defineComponent({
       items: EXERCICES,
       results: [exercice1()],
     });
-
-
 
     return {
       ...toRefs(data),
